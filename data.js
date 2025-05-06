@@ -172,3 +172,61 @@ for (i=0; i<mixxed.length;i++){
 }
 
 console.log(somming)
+
+const uno = [5, 12, 'ciao', 25, true, 8]
+let sommers = 0
+for (i=0; i<uno.length;i++){
+ if (uno[i]>10){
+  sommers=sommers+uno[i]
+ }
+}
+
+console.log('risultato esercizio 1', sommers)
+
+
+const due = ['ciao', 'ok', 'cia', 'bene']
+let duedue = []
+for (i=0; i<due.length; i++){
+ if (due[i].length >= 4){
+  duedue.push(due[i])
+ }
+
+}
+
+console.log(duedue)
+
+const tre = [[5, 99, 'a'], [20, 'b', 7]]
+let maxer = Number.NEGATIVE_INFINITY
+// Output atteso: 99
+for (i=0; i<tre.length;i++){
+  for (j=0; j<tre[i].length;j++){
+    if (tre[i][j]>maxer){
+      maxer = tre[i][j]
+    }
+  }
+}
+console.log(maxer)
+
+const quattro = [['ciao', 'ok'], ['bene', 'fine']]
+let lets = 0
+
+for (i=0; i<quattro.length; i++){
+  for (j=0; j<quattro[i].length; j++){
+    lets = lets+quattro[i][j].length
+  }
+}
+
+console.log(lets)
+
+
+const cinque = [1, 2, 'a', 3, true]
+// Output atteso: [2, 2, 'a', 6, true]
+
+for (i=0; i<cinque.length;i++){
+  if (typeof cinque[i] == typeof 1 && cinque[i] % 2 != 0){
+    cinque[i]= cinque[i]*2
+  }
+}
+
+console.log(cinque)
+
