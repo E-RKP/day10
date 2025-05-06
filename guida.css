@@ -1,0 +1,42 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.titolosx, .titolodx{
+  display: none;
+}
+
+.box{
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem 0;
+  background-color: aqua;
+  width: 95%;
+  margin: 0 auto;
+
+}
+
+
+
+@media only screen and (min-width: 768px){
+
+  .titolosx, .titolodx{
+    display: block;
+  }
+
+  .box{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin: 0 auto;
+    align-items: center;
+    height: 10vh;
+    background-color: green;
+  }
+
+}
