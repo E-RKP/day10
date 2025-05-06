@@ -125,3 +125,50 @@ for (i=0; i<inputt.length;i++){
 }
 
 console.log(inputt)
+
+const putt = [[1, 'ciao'], [2, 'hello', 'a']];
+let ocunter = 0
+// Output atteso: 3
+for (i=0; i<putt.length;i++){
+  for (j=0; j<putt[i].length;j++){
+    if (typeof putt[i][j] != typeof 1){
+      ocunter++;
+    }
+  }
+}
+console.log(ocunter)
+
+const lol = [[5, 12], ['a', 30, 8]];
+// Output: [[5, 'grande'], ['a', 'grande', 8]]
+for (i=0; i<lol.length; i++){
+  for (j=0; j<lol[i].length;j++){
+    if (typeof lol[i][j] == typeof 1 && lol[i][j] > 10){
+      lol[i][j]= 'grande'
+    }
+  }
+}
+
+console.log(lol)
+
+
+const affr = [[true, 1, 'a'], [false, 2, true]];
+// Output atteso: [[1, 'a'], [2]]
+for (i=0; i<affr.length;i++){
+  for (j=0; j<affr[i].length; j++){
+    if (typeof affr[i][j] == Boolean){
+      affr = affr.filter(affr[i][j])
+    }
+  }
+}
+console.log(affr)
+
+
+const mixxed = [10, 'a', true, 3, false, 'b', 7];
+let somming = 0
+for (i=0; i<mixxed.length;i++){
+  if (typeof mixxed[i] == 'number'){
+    somming = somming+mixxed[i]
+  }
+}
+
+console.log(somming)
