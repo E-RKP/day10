@@ -89,6 +89,39 @@ for (i=0; i<arrt.length; i++){
 console.log(`Il numero massimo dell'array1 è ${max1}, del array 2 è ${max2}, dell' array3 è ${max3}`)
 
 
+const datas = [[1, 'a'], [2, 'b', 3]];
+// Output atteso: [[2, 'a'], [4, 'b', 6]]
 
 
+for (i=0; i<datas.length; i++){
+  for (j=0; j<datas[i].length;j++){
+    if (typeof datas[i][j] == typeof 1){
+      datas[i][j]= datas[i][j]*2
+    }
+  }
+}
+console.log(datas)
 
+const input = [[2, 5, 'a'], [4, 3, 'b']];
+// Output atteso: [[4, 5, 'a'], [8, 3, 'b']]
+for (i=0; i<input.length;i++){
+  for (j=0; j<input[i].length;j++){
+    if (input[i][j] % 2 == 0 && typeof input[i][j] == typeof 1 ){
+      input[i][j]= input[i][j]*2
+    }
+  }
+}
+console.log(input)
+
+
+const inputt = [[1, 'ciao'], ['ok', 3, 'abc']];
+// Output: [[1, 4], [2, 3, 3]]
+for (i=0; i<inputt.length;i++){
+  for (j=0; j<inputt[i].length;j++){
+    if (typeof inputt[i][j] != typeof 1){
+      inputt[i][j]= inputt[i][j].length
+    }
+  }
+}
+
+console.log(inputt)
