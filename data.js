@@ -48,6 +48,47 @@ for (i=0; i<values.length; i++){
 console.log(somma)
 
 
+const mixed = [[5, 'a'], ['b', 6, 7], [true, 10]];
+let counter = 0
+let counter2 = 0
+// Output atteso: 4
+for (i=0; i<mixed.length;i++){
+  for (j=0;j<mixed[i].length; j++){
+    counter++;
+    if (typeof mixed[i][j] == typeof 1){
+      counter2++;
+    }
+  }
+}
+
+console.log(`All' interno dell' array ci sono ${counter} elementi, di cui ${counter2} numerici`)
+
+
+const arrt = [[1, 50, 'a'], [100, 'b', 30], [9, 99]];
+// Output atteso:
+// Massimo nel gruppo 0: 50
+// Massimo nel gruppo 1: 100
+// Massimo nel gruppo 2: 99
+let max1 = Number.NEGATIVE_INFINITY
+let max2 = Number.NEGATIVE_INFINITY
+let max3 = Number.NEGATIVE_INFINITY
+
+for (i=0; i<arrt.length; i++){
+  for (j=0; j<arrt[i].length; j++){
+    if (typeof arrt[0][j] == typeof 1 && arrt[0][j] > max1){
+      max1 = arrt[0][j]
+    }else if (typeof arrt[1][j] == typeof 1 && arrt[1][j] > max2){
+      max2 = arrt[1][j]
+    }else if(typeof arrt[2][j] == typeof 1 && arrt[2][j] > max3){
+      max3=arrt[2][j]
+    }
+
+  }
+}
+
+console.log(`Il numero massimo dell'array1 è ${max1}, del array 2 è ${max2}, dell' array3 è ${max3}`)
+
+
 
 
 
