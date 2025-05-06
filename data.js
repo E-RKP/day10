@@ -32,7 +32,20 @@ for (i=0; i<data.length; i++){
 console.log(min)
 
 
+const values = [[1, 2, 'x'], [3, 4], [5, 'y', 6]];
+// Output atteso: 21
+let somma = 0
 
+for (i=0; i<values.length; i++){
+  for (j=0; j<values.length;j++){
+    if (typeof values[i][j] == typeof 1){
+
+      somma = somma+values[i][j]
+    }
+  }
+}
+
+console.log(somma)
 
 
 
